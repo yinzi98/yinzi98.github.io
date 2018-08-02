@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-02T06:30:29.802Z</updated>
+  <updated>2018-08-02T14:25:30.094Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,14 +21,23 @@
     <link href="http://yoursite.com/2018/08/02/Start-coding-now/"/>
     <id>http://yoursite.com/2018/08/02/Start-coding-now/</id>
     <published>2018-08-02T04:28:31.000Z</published>
-    <updated>2018-08-02T06:30:29.802Z</updated>
+    <updated>2018-08-02T14:25:30.094Z</updated>
+    
+    <content type="html"><![CDATA[<p>虽然从去年年底就有考虑搭个主页，但一直拖到现在，也挺久的。趁着这两天系楼断网就在寝室按照网上的各路教程搞了一个，终于结束了，哈哈哈哈哈～折腾一番，有了自己的博客，另外知道了一点 Git 的知识，收藏夹里多了很多大佬的博客。以后坚持写写题解，写点技术性的东西，也能防止自己又堕落。<br>很少能做到坚持一件事超过一个月，希望这次能坚持写下去吧。</p><p>Start coding now.</p><p>第一次搭建博客，好多地方都还不完善，欢迎大佬指点。<br>留言系统来必应实在太丑了，虽然Gitment只能用GitHub登录，但考虑到博客的访问人群，先忍忍，等过几天就换过去。</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;虽然从去年年底就有考虑搭个主页，但一直拖到现在，也挺久的。趁着这两天系楼断网就在寝室按照网上的各路教程搞了一个，终于结束了，哈哈哈哈哈～折腾一番，有了自己的博客，另外知道了一点 Git 的知识，收藏夹里多了很多大佬的博客。以后坚持写写题解，写点技术性的东西，也能防止自己又堕
+      
+    
     </summary>
     
+      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Life" scheme="http://yoursite.com/tags/Life/"/>
     
   </entry>
   

@@ -3,9 +3,12 @@
   <entry>
     <title><![CDATA[Start coding now]]></title>
     <url>%2F2018%2F08%2F02%2FStart-coding-now%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[虽然从去年年底就有考虑搭个主页，但一直拖到现在，也挺久的。趁着这两天系楼断网就在寝室按照网上的各路教程搞了一个，终于结束了，哈哈哈哈哈～折腾一番，有了自己的博客，另外知道了一点 Git 的知识，收藏夹里多了很多大佬的博客。以后坚持写写题解，写点技术性的东西，也能防止自己又堕落。很少能做到坚持一件事超过一个月，希望这次能坚持写下去吧。 Start coding now. 第一次搭建博客，好多地方都还不完善，欢迎大佬指点。留言系统来必应实在太丑了，虽然Gitment只能用GitHub登录，但考虑到博客的访问人群，先忍忍，等过几天就换过去。]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
       <tags>
-        <tag>笔记</tag>
+        <tag>Life</tag>
       </tags>
   </entry>
 </search>
