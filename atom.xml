@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ZHY&#39;s Blog</title>
+  
+  <subtitle>#include  &lt; bits/stdc++.h &gt;</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-08-02T06:30:29.802Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>卓华寅</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Start coding now</title>
+    <link href="http://yoursite.com/2018/08/02/Start-coding-now/"/>
+    <id>http://yoursite.com/2018/08/02/Start-coding-now/</id>
+    <published>2018-08-02T04:28:31.000Z</published>
+    <updated>2018-08-02T06:30:29.802Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
