@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[B-Matrix Multiplication]]></title>
+    <url>%2F2018%2F08%2F06%2FB-Matrix-Multiplication%2F</url>
+    <content type="text"><![CDATA[描述传送门：text url 输入描述 输出描述 示例输入1 输出1 题解题目大意 思路 代码1]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2018 ACM 国际大学生程序设计竞赛上海大都会赛]]></title>
     <url>%2F2018%2F08%2F05%2F2018-ACM-SHDDH%2F</url>
     <content type="text"><![CDATA[关于比赛传送门：2018 ACM 国际大学生程序设计竞赛上海大都会赛2018 ACM 国际大学生程序设计竞赛上海大都会赛重现赛2018-08-05 12:00:00 至 2018-08-05 17:00:00时长: 5小时 比赛情况实录难度差不多介于省赛和区域赛之间吧。开题A是计算几何，有点思路后就先放下去写签到题，B读错题WA一发，K直接套模板，然后就接着看A。之前写过类似题，没注意数据范围就头铁地交了发n3的代码，TE后才发现数据范围是之前那道十多倍，就听学长的先看D。推十分钟公式无果后打算直接暴力打表，算到最后三个多边形时，HSQ大佬先推出公式（Orz），改过精度问题之后也过了就回去改A。改成n2代码后还是TE，至此一切都结束了。 总结太TM菜，四个月了还是只能写基础题 B，K签到；D题靠HSQ推公式，还卡了下精度问题； A题计算几何，优化到n2，但没想到随机算法，在这题耽误的时间太多； F题扫描线，但没看就比较傻逼；J题数位DP劝退；C题计算几何+大数；E题枚举中点，HASH+二分；H题线段树； G-无解的神题；L快速数论变换（NTT）； 解题报告4类题解肯定没有的，3类题解先填坑，慢慢补吧。 A Fruit Ninja B Perfect Numbers（签到） C Rescue D Thinking-Bear magic E Thinking-Bear’s necklace F Color it G External Square H A Simple Problem with Integers I Matrix Game J Beautiful Numbers K Matrix Multiplication（签到） L Calculation]]></content>
