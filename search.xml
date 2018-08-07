@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[B-Matrix Multiplication]]></title>
+    <title><![CDATA[D-Thinking-Bear magic]]></title>
+    <url>%2F2018%2F08%2F07%2FD-%C2%96Thinking-Bear-magic%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[B-Matrix Multiplication （矩阵快速幂 模板）]]></title>
     <url>%2F2018%2F08%2F06%2FB-Matrix-Multiplication%2F</url>
-    <content type="text"><![CDATA[描述传送门：text url 输入描述 输出描述 示例输入1 输出1 题解题目大意 思路 代码1]]></content>
+    <content type="text"><![CDATA[描述传送门：B-Matrix Multiplication In mathematics, matrix multiplication or matrix product is a binary operation that produces a matrix from two matrices with entries in a field, or, more generally, in a ring or even a semiring. The matrix product is designed for representing the composition of linear maps that are represented by matrices. Matrix multiplication is thus a basic tool of linear algebra, and as such has numerous applications in many areas of mathematics, as well as in applied mathematics, physics, and engineering. In more detail, if A is an n x m matrix and B is an m x p matrix, their product AB is an n x p matrix, in which the m entries across a row of A are multiplied with the m emtries down a column of B and summed to produce an entry of AB. When two linear maps are represented by matrices, then the matrix product represents the composition of the two maps.We can only multiply two matrices if their dimensions are compatible, which means the number of columns in the first matrix is the same as the number of rows in the second matrix.If A is an n x m matrix and B is an m x p matrix, the matrix product C = AB is defined to be the n x p matrix such that,for i = 1,2, …, n and j = 1,2, …, p.Your task is to design a matrix multiplication calculator to multiply two matrices anddisplay the output. If the matrices cannot be multiplied, display “ERROR”. 输入描述The first line of the input is T(1≤ T ≤ 100), which stands for the number of test cases you need to solve.For each test case, the first line contains four integers m, n, p and q (1 ≤ m,n,p,q ≤ 20). m and n represent the dimension of matrix A, while p and q represent the dimension of matrix B.The following m lines consist of the data for matrix A followed by p lines that contains the data for matrix B. (-100 ≤ aij ≤ 100, -100 ≤ bij ≤ 100). 输出描述For each test case, print the case number and the output of the matrix multiplication. 示例输入12345678910111222 3 3 21 1 11 2 32 34 56 72 3 2 31 2 31 2 32 3 42 3 4 输出12345Case 1:12 1528 34Case 2:ERROR 题解题目大意矩阵相乘 思路模板题 代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768#include &lt;bits/stdc++.h&gt;typedef long long lint;const int MAXN = 25, INF = 0x3f3f3f3f;using namespace std;struct Mat&#123; int n, m; int mat[MAXN][MAXN]; Mat()&#123; memset(mat, 0, sizeof(mat)); n = m = MAXN; &#125;; Mat operator * (Mat b)&#123; Mat c; c = Mat(); c.n = n; c.m = b.m; for(int i=1; i&lt;=n; ++i) for(int j=1; j&lt;=b.m; ++j)&#123; for(int k=1; k&lt;=m; ++k)&#123; c.mat[i][j] += mat[i][k]*b.mat[k][j]; &#125; &#125; return c; &#125; Mat operator + (Mat b)&#123; Mat c; c.n = n; c.m = m; for (int i=1; i&lt;=n; ++i) for (int j=1; j&lt;=m; ++j) c.mat[i][j] = mat[i][j] + b.mat[i][j]; return c; &#125; void in(int x, int y)&#123; n = x; m = y; for(int i=1; i&lt;=x; ++i) for(int j=1; j&lt;=y; ++j) scanf("%d", &amp;mat[i][j]); &#125; void out()&#123; for(int i=1; i&lt;=n; ++i)&#123; for(int j=1; j&lt;=m; ++j) printf("%d ", mat[i][j]); puts(""); &#125; &#125;&#125;; int main()&#123; int t, n, m, p, q; scanf("%d", &amp;t); Mat a, b, c; for(int d = 1; d &lt;= t; d++)&#123; scanf("%d %d %d %d", &amp;n, &amp;m, &amp;p, &amp;q); a.in(n, m); b.in(p, q); printf("Case %d:\n", d); if(m != p)&#123; printf("ERROR\n"); &#125; else&#123; c = a*b; c.out(); &#125; &#125;&#125;]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
       <tags>
         <tag>数学</tag>
+        <tag>矩阵</tag>
       </tags>
   </entry>
   <entry>
