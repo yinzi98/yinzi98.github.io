@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[POJ-2718]]></title>
+    <url>%2F2018%2F08%2F11%2FPOJ-2718%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[Aizu-0121]]></title>
     <url>%2F2018%2F08%2F10%2FAizu-0121%2F</url>
     <content type="text"></content>
@@ -133,8 +138,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>最短路</tag>
         <tag>生成树</tag>
+        <tag>最短路</tag>
       </tags>
   </entry>
   <entry>
@@ -182,8 +187,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>最短路</tag>
         <tag>生成树</tag>
+        <tag>最短路</tag>
       </tags>
   </entry>
   <entry>
@@ -325,8 +330,8 @@
         <category>基础技巧</category>
       </categories>
       <tags>
-        <tag>二分</tag>
         <tag>贪心</tag>
+        <tag>二分</tag>
       </tags>
   </entry>
   <entry>
