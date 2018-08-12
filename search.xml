@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[POJ-2718]]></title>
+    <title><![CDATA[POJ-2718 Smallest Difference（STL全排列 + 输入流魔改）]]></title>
     <url>%2F2018%2F08%2F11%2FPOJ-2718%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[描述传送门：Smallest Difference Given a number of distinct decimal digits, you can form one integer by choosing a non-empty subset of these digits and writing them in some order. The remaining digits can be written down in some order to form a second integer. Unless the resulting integer is 0, the integer may not start with the digit 0. For example, if you are given the digits 0, 1, 2, 4, 6 and 7, you can write the pair of integers 10 and 2467. Of course, there are many ways to form such pairs of integers: 210 and 764, 204 and 176, etc. The absolute value of the difference between the integers in the last pair is 28, and it turns out that no other pair formed by the rules above can achieve a smaller difference. 输入描述The first line of input contains the number of cases to follow. For each case, there is one line of input containing at least two but no more than 10 decimal digits. (The decimal digits are 0, 1, …, 9.) No digit appears more than once in one line of the input. The digits will appear in increasing order, separated by exactly one blank space. 输出描述For each test case, write on a single line the smallest absolute difference of two integers that can be written from the given digits as described by the rules above. 示例输入1210 1 2 4 6 7 输出128 题解题目大意给定若干位十进制数，你可以通过选择一个非空子集并以某种顺序构建一个数。剩余元素可以用相同规则构建第二个数。除非构造的数恰好为0，否则不能以0打头。 思路若总数字数是偶数，组出来的两个数字的长度必相等，若是奇数，长度必差一对所有数字排列，求 data[:N//2], data[N//2:] 的差及可 AC注意须排除有前导 0 的情况。 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960#include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;#include &lt;sstream&gt;using namespace std;int solve(vector&lt;int&gt;&amp; data) &#123; int N = data.size(); int len = N / 2; int min_diff = 1000000000; do &#123; // data[:len], data[len:] // prefix 0 if (len != 1 &amp;&amp; data[0] == 0) continue; if (N - len != 1 &amp;&amp; data[len] == 0) continue; int first = 0; for (int i = 0; i &lt; len; i++) first = first * 10 + data[i]; int second = 0; for (int i = len; i &lt; N; i++) second = second * 10 + data[i]; if (abs(first - second) &lt; min_diff) min_diff = abs(first - second); &#125; while (next_permutation(data.begin(), data.end())); return min_diff;&#125;int main() &#123; ios::sync_with_stdio(false); int T; cin &gt;&gt; T; string temp; getline(cin, temp); // eat the endl while (T--) &#123; string line; getline(cin, line); istringstream iss(line); vector&lt;int&gt; data; int inp; while (iss &gt;&gt; inp) &#123; data.push_back(inp); &#125; cout &lt;&lt; solve(data) &lt;&lt; endl; &#125; return 0;&#125;]]></content>
+      <categories>
+        <category>题解</category>
+        <category>C++ &amp;&amp; STL库</category>
+      </categories>
+      <tags>
+        <tag>STL</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Aizu-0121]]></title>
@@ -138,8 +145,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>生成树</tag>
         <tag>最短路</tag>
+        <tag>生成树</tag>
       </tags>
   </entry>
   <entry>
@@ -187,8 +194,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>生成树</tag>
         <tag>最短路</tag>
+        <tag>生成树</tag>
       </tags>
   </entry>
   <entry>
