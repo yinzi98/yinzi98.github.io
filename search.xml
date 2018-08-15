@@ -8,7 +8,14 @@
   <entry>
     <title><![CDATA[POJ-3009]]></title>
     <url>%2F2018%2F08%2F13%2FPOJ-3009%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[描述传送门：text url 输入描述 输出描述 示例输入1 输出1 题解题目大意 思路 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263#include &lt;iostream&gt;#include &lt;cstdio&gt;#include &lt;cmath&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;#include &lt;set&gt;#include &lt;map&gt;#include &lt;vector&gt;#include &lt;queue&gt;const int MAXN = 25, INF = 0x3f3f3f3f;using namespace std;int dx[] = &#123;0, 0, 1, -1&#125;;int dy[] = &#123;1, -1, 0, 0&#125;;int w, h, ans;int mp[MAXN][MAXN];struct node&#123; int x, y;&#125;Start, End, now, nex;void dfs(int x, int y, int step)&#123; if(step &gt;= 10)&#123; return; &#125; for(int i = 0; i &lt; 4; i++)&#123; int xx = x, yy = y; if(mp[xx+dx[i]][yy+dy[i]] == 1)&#123; continue; &#125; while(mp[xx+dx[i]][yy+dy[i]] == 0)&#123; xx += dx[i]; yy += dy[i]; &#125; if(mp[xx+dx[i]][yy+dy[i]] == 3)&#123; ans = min(ans, step+1); continue; &#125; if(mp[xx+dx[i]][yy+dy[i]] == 1)&#123; mp[xx+dx[i]][yy+dy[i]] = 0; dfs(xx, yy, step+1); mp[xx+dx[i]][yy+dy[i]] = 1; &#125; &#125;&#125;int main()&#123; while(cin &gt;&gt; w &gt;&gt; h &amp;&amp; w &amp;&amp; h)&#123; memset(mp, -1, sizeof(mp)); for(int i = 1; i &lt;= h; i++)&#123; for(int j = 1; j &lt;= w; j++)&#123; cin &gt;&gt; mp[i][j]; if(mp[i][j] == 2)&#123; Start.x = i; Start.y = j; mp[i][j] = 0; &#125; &#125; &#125; ans = INF; dfs(Start.x, Start.y, 0); if(ans == INF) cout &lt;&lt; "-1" &lt;&lt; endl; else cout &lt;&lt; ans &lt;&lt; endl; &#125;&#125;]]></content>
+      <categories>
+        <category>题解</category>
+        <category>简单搜索</category>
+      </categories>
+      <tags>
+        <tag>DFS</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[POJ-2718 Smallest Difference（STL全排列 + 输入流魔改）]]></title>
@@ -163,8 +170,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>生成树</tag>
         <tag>最短路</tag>
+        <tag>生成树</tag>
       </tags>
   </entry>
   <entry>
@@ -212,8 +219,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>生成树</tag>
         <tag>最短路</tag>
+        <tag>生成树</tag>
       </tags>
   </entry>
   <entry>
