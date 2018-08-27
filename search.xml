@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[HDU-1114]]></title>
-    <url>%2F2018%2F08%2F14%2FHDU-1114%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[POJ-3009]]></title>
-    <url>%2F2018%2F08%2F13%2FPOJ-3009%2F</url>
-    <content type="text"><![CDATA[描述传送门：text url 输入描述 输出描述 示例输入1 输出1 题解题目大意 思路 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263#include &lt;iostream&gt;#include &lt;cstdio&gt;#include &lt;cmath&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;#include &lt;set&gt;#include &lt;map&gt;#include &lt;vector&gt;#include &lt;queue&gt;const int MAXN = 25, INF = 0x3f3f3f3f;using namespace std;int dx[] = &#123;0, 0, 1, -1&#125;;int dy[] = &#123;1, -1, 0, 0&#125;;int w, h, ans;int mp[MAXN][MAXN];struct node&#123; int x, y;&#125;Start, End, now, nex;void dfs(int x, int y, int step)&#123; if(step &gt;= 10)&#123; return; &#125; for(int i = 0; i &lt; 4; i++)&#123; int xx = x, yy = y; if(mp[xx+dx[i]][yy+dy[i]] == 1)&#123; continue; &#125; while(mp[xx+dx[i]][yy+dy[i]] == 0)&#123; xx += dx[i]; yy += dy[i]; &#125; if(mp[xx+dx[i]][yy+dy[i]] == 3)&#123; ans = min(ans, step+1); continue; &#125; if(mp[xx+dx[i]][yy+dy[i]] == 1)&#123; mp[xx+dx[i]][yy+dy[i]] = 0; dfs(xx, yy, step+1); mp[xx+dx[i]][yy+dy[i]] = 1; &#125; &#125;&#125;int main()&#123; while(cin &gt;&gt; w &gt;&gt; h &amp;&amp; w &amp;&amp; h)&#123; memset(mp, -1, sizeof(mp)); for(int i = 1; i &lt;= h; i++)&#123; for(int j = 1; j &lt;= w; j++)&#123; cin &gt;&gt; mp[i][j]; if(mp[i][j] == 2)&#123; Start.x = i; Start.y = j; mp[i][j] = 0; &#125; &#125; &#125; ans = INF; dfs(Start.x, Start.y, 0); if(ans == INF) cout &lt;&lt; "-1" &lt;&lt; endl; else cout &lt;&lt; ans &lt;&lt; endl; &#125;&#125;]]></content>
+    <title><![CDATA[POJ-3009 Curling 2.0（DFS）]]></title>
+    <url>%2F2018%2F08%2F13%2FPOJ-3009%20Curling%202.0%2F</url>
+    <content type="text"><![CDATA[描述传送门：POJ-3009 Curling 2.0 On Planet MM-21, after their Olympic games this year, curling is getting popular. But the rules are somewhat different from ours. The game is played on an ice game board on which a square mesh is marked. They use only a single stone. The purpose of the game is to lead the stone from the start to the goal with the minimum number of moves. Fig. 1 shows an example of a game board. Some squares may be occupied with blocks. There are two special squares namely the start and the goal, which are not occupied with blocks. (These two squares are distinct.) Once the stone begins to move, it will proceed until it hits a block. In order to bring the stone to the goal, you may have to stop the stone by hitting it against a block, and throw again. Fig. 1: Example of board (S: start, G: goal) The movement of the stone obeys the following rules: At the beginning, the stone stands still at the start square.The movements of the stone are restricted to x and y directions. Diagonal moves are prohibited.When the stone stands still, you can make it moving by throwing it. You may throw it to any direction unless it is blocked immediately(Fig. 2(a)).Once thrown, the stone keeps moving to the same direction until one of the following occurs:The stone hits a block (Fig. 2(b), (c)).The stone stops at the square next to the block it hit.The block disappears.The stone gets out of the board.The game ends in failure.The stone reaches the goal square.The stone stops there and the game ends in success.You cannot throw the stone more than 10 times in a game. If the stone does not reach the goal in 10 moves, the game ends in failure. Fig. 2: Stone movements Under the rules, we would like to know whether the stone at the start can reach the goal and, if yes, the minimum number of moves required. With the initial configuration shown in Fig. 1, 4 moves are required to bring the stone from the start to the goal. The route is shown in Fig. 3(a). Notice when the stone reaches the goal, the board configuration has changed as in Fig. 3(b). Fig. 3: The solution for Fig. D-1 and the final board configuration 输入描述The input is a sequence of datasets. The end of the input is indicated by a line containing two zeros separated by a space. The number of datasets never exceeds 100. Each dataset is formatted as follows. the width(=w) and the height(=h) of the boardFirst row of the board…h-th row of the board The width and the height of the board satisfy: 2 &lt;= w &lt;= 20, 1 &lt;= h &lt;= 20. Each line consists of w decimal numbers delimited by a space. The number describes the status of the corresponding square. 0 vacant square1 block2 start position3 goal positionThe dataset for Fig. D-1 is as follows: 6 61 0 0 2 1 01 1 0 0 0 00 0 0 0 0 30 0 0 0 0 01 0 0 0 0 10 1 1 1 1 1 输出描述For each dataset, print a line having a decimal integer indicating the minimum number of moves along a route from the start to the goal. If there are no such routes, print -1 instead. Each line should not have any character other than this number. 示例输入1234567891011121314151617182 13 26 61 0 0 2 1 01 1 0 0 0 00 0 0 0 0 30 0 0 0 0 01 0 0 0 0 10 1 1 1 1 16 11 1 2 1 1 36 11 0 2 1 1 312 12 0 1 1 1 1 1 1 1 1 1 313 12 0 1 1 1 1 1 1 1 1 1 1 30 0 输出12345614-1410-1 题解题目大意每一次碰到障碍则在障碍的旁边停下来，并且障碍被击碎。此时可以重新值掷一次冰球。当掷球次数超过 10 次则输出 -1。 思路最短路的变型，直接暴力怼就好。BFS也可以做，但这题涉及到地图的变化，更适合用DFS回溯。注意减枝。 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263#include &lt;iostream&gt;#include &lt;cstdio&gt;#include &lt;cmath&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;#include &lt;set&gt;#include &lt;map&gt;#include &lt;vector&gt;#include &lt;queue&gt;const int MAXN = 25, INF = 0x3f3f3f3f;using namespace std;int dx[] = &#123;0, 0, 1, -1&#125;;int dy[] = &#123;1, -1, 0, 0&#125;;int w, h, ans;int mp[MAXN][MAXN];struct node&#123; int x, y;&#125;Start, End, now, nex;void dfs(int x, int y, int step)&#123; if(step &gt;= 10)&#123; return; &#125; for(int i = 0; i &lt; 4; i++)&#123; int xx = x, yy = y; if(mp[xx+dx[i]][yy+dy[i]] == 1)&#123; continue; &#125; while(mp[xx+dx[i]][yy+dy[i]] == 0)&#123; xx += dx[i]; yy += dy[i]; &#125; if(mp[xx+dx[i]][yy+dy[i]] == 3)&#123; ans = min(ans, step+1); continue; &#125; if(mp[xx+dx[i]][yy+dy[i]] == 1)&#123; mp[xx+dx[i]][yy+dy[i]] = 0; dfs(xx, yy, step+1); mp[xx+dx[i]][yy+dy[i]] = 1; &#125; &#125;&#125;int main()&#123; while(cin &gt;&gt; w &gt;&gt; h &amp;&amp; w &amp;&amp; h)&#123; memset(mp, -1, sizeof(mp)); for(int i = 1; i &lt;= h; i++)&#123; for(int j = 1; j &lt;= w; j++)&#123; cin &gt;&gt; mp[i][j]; if(mp[i][j] == 2)&#123; Start.x = i; Start.y = j; mp[i][j] = 0; &#125; &#125; &#125; ans = INF; dfs(Start.x, Start.y, 0); if(ans == INF) cout &lt;&lt; "-1" &lt;&lt; endl; else cout &lt;&lt; ans &lt;&lt; endl; &#125;&#125;]]></content>
       <categories>
         <category>题解</category>
         <category>简单搜索</category>
@@ -170,8 +165,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>最短路</tag>
         <tag>生成树</tag>
+        <tag>最短路</tag>
       </tags>
   </entry>
   <entry>
@@ -219,8 +214,8 @@
         <category>图论</category>
       </categories>
       <tags>
-        <tag>最短路</tag>
         <tag>生成树</tag>
+        <tag>最短路</tag>
       </tags>
   </entry>
   <entry>
@@ -362,8 +357,8 @@
         <category>基础技巧</category>
       </categories>
       <tags>
-        <tag>二分</tag>
         <tag>贪心</tag>
+        <tag>二分</tag>
       </tags>
   </entry>
   <entry>
