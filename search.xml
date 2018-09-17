@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[NYIST-软件ACM集训队招新介绍]]></title>
+    <url>%2F2018%2F09%2F17%2F2018ACM%2F</url>
+    <content type="text"><![CDATA[什么是ACM？ACM国际大学生程序设计竞赛（英语：ACM International Collegiate Programming Contest, ICPC）是由美国计算机协会（ACM）主办的，一项旨在展示大学生创新能力、团队精神和在压力下编写程序、分析和解决问题能力的年度竞赛。经过30多年的发展，ACM国际大学生程序设计竞赛已经发展成为最具影响力的大学生计算机竞赛。 除此之外，ACM现已广泛指代大部分大学生算法竞赛。 为什么要加入ACM集训队？ 不管在什么时候，算法都是计算机科学领域最重要的基石之一。ACMer扎实的算法基础和编程能力更受企业青睐。 软件ACM集训队是我校竞争力最强的工作室之一，每年软件ACM集训队都会派出队伍参加ACM亚洲区域赛，国赛，省赛以及各种程序设计竞赛，并多次取得不俗的成绩。 软件ACM集训队提供了一个良好的学习环境，学习，其实最重要的是环境。 与全国各大高校同台竞技，开阔视野，让你见识到这个领域内最牛逼的那一批同龄人是怎样的水准，自己距离他们有多大的差距。 很多往届学长在 BAT 等知名公司就职，会有很多内推机会。 ACM竞赛成绩对考研有很大加成。 公费旅游 集训队的主要学习内容 我们的目标是通过不断的学习编程及算法，来参加各大算法竞赛及各类编程比赛（穷游全国） 附上一个知乎问题，大家可以看看回答: ACM 的正确入门方式是什么？ 我们主要参加以下几类竞赛: ACM-ICPC World Final （雾 ACM-ICPC国际大学生程序设计竞赛亚洲区域赛 ACM-ICPC国际大学生程序设计竞赛各省省赛以及邀请赛 CCPC中国大学生程序设计竞赛 &quot;蓝桥杯&quot;竞赛 CCCC“中国高校计算机大赛-团体程序设计天梯赛” 以及其他类型的编程竞赛 ACM竞赛的简要规则虽然不同比赛规则大相径庭,但最为广泛通用是以ACM-ICPC竞赛为基础的规则。 ACM-ICPC以团队的形式代表各学校参赛，每队由3名队员组成。比赛期间，每队使用1台计算机需要在5个小时内使用C、C++或Java中的一种编写程序解决8到13个问题。程序完成之后提交裁判运行，运行的结果会判定为”AC(正确)/WA（错误）/TLE（超时）/MLE（超出内存限制）/RE（运行错误）/PE（格式错误）”中的一种并及时通知参赛队。每队在正确完成一题后，组织者将在其位置上升起一只代表该题颜色的气球。最后的获胜者为正确解答题目最多且总用时最少的队伍。每道试题用时将从竞赛开始到试题解答被判定为正确为止，其间每一次提交运行结果被判错误的话将被加罚20分钟时间，未正确解答的试题不记时。 与其它计算机程序竞赛（例如国际信息学奥林匹克，IOI）相比，ACM-ICPC赛制的特点在于其为3人团队作战且题量大，每队需要5小时内完成11道题目，甚至更多。除此之外，一支队伍有3名队员却只有1台计算机，使得时间显得更为紧张。因此除了扎实的编程能力，良好的团队协作和心理素质同样是获胜的关键。 ACM集训队的选拔制度我们会在军训结束后进行简单的C语言培训，国庆期间也会组织有关C语言和简单算法的集训，所有人都可以报名参加。不要担心零基础的问题，我们保证讲到你们听懂为止。我们会在集训后举办一系列的招选拔赛和月赛，根据名次来决定具体的人选，具体请加入2018软件ACM迎新群:839634547 其他特别感谢计科ACM工作室，尤其要感谢hpc大佬 我们采用在线评测系统(online judge)进行训练 本校oj地址: www.nswoj.com (软院搭建 仅内网登录) fzhai.xin (软院搭建) nyoj.top (计科搭建) acm.nyist.edu.cn (老OJ) 不论是学习，生活还是什么方面的问题都会有学长学姐耐心解答。 如果高中有信息学竞赛（NOIP）的经历，可以直接联系我们 最终解释权归南阳理工学院软件学院ACM集训队所有]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nowcoder190 B-自杀游戏（DP递推 or 记忆化搜索）]]></title>
+    <url>%2F2018%2F09%2F17%2Fnowcoder190%20B-%E8%87%AA%E6%9D%80%E6%B8%B8%E6%88%8F%2F</url>
+    <content type="text"><![CDATA[描述传送门：自杀游戏 Alice和Bob产生了不可调节的矛盾，于是他们相约一起玩一个自杀游戏，输的人就会从这个世界上消失。 游戏开始时，Alice手上拿着一个定时炸弹，炸弹有个倒计时t。炸弹在t=0时刻会爆炸，此时手上拿着炸弹的人会从这个世界上消失。为了增加游戏乐趣，他们约定每个人拿到炸弹后可以选择将炸弹的时间调快d秒(d ∈ [a,b])，或者不调。每次交换炸弹会消耗1秒（假设调节炸弹时间不需要消耗时间）。 问题来了，如果双方都足够聪明，谁会活下去呢？ 输入描述第一行有三个整数t,a,b，分别表示炸弹初始时刻的倒计时，可调节时间的范围。(0 ≤ t ≤ 10^5,1 ≤ a ≤ b ≤ 10) 输出描述若Alice存活则输出”Alice”，若Bob存活则输出”Bob”。 示例输入16 3 4 输出1Alice HintAlice只需要将炸弹调快3秒后再给Bob，Bob就会拿到一个2秒后爆炸的炸弹。 题解题目大意友好的中文题面 思路所以我们可以假定一个状态state[t]表示炸弹时间为t的存活状态, state[t]==1表示Alice在t时刻存活,Bob死亡, state[t]==0表示在t时刻Alice死亡, Bob存活. 然后每次可以调控[a,b]的时间,同时传递炸弹需要1秒, 所以,我们的状态可以这样转移: 当state[t-(b+1)]...state[t-(a+1)]存在一个state[x]==0时 state[t] = 1 或者 当 state[t-1]==0时 state[t] = 1 可以理解为: 如果时间为炸弹[t-1]或者[t-(b+1)]~[t-(a+1)]的游戏的结果都是最优解了,而现在炸弹的时间增加了,所以如果在过去的一段区间出现Alice死亡的结局,那么现在就可以翻转这个结局了. 代码1234567891011121314151617181920#include &lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1e5+500;bool living[maxn]; // living[t]==true表示t时刻Alice活,Bob死 int main() &#123; int i, j, t, a, b; scanf("%d%d%d", &amp;t, &amp;a, &amp;b); for (i=1; i&lt;=t; ++i) &#123; if (!living[i-1]) living[i] = true; // 表明上一次游戏的最优解Alice死,Bob活,状态转移,当前游戏的Alice活,Bod死 for (j=i-b-1; j&lt;=i-a-1; ++j) &#123; // 因为传递炸弹要用1秒 所以还要减一 if (j&gt;=0 &amp;&amp; !living[j]) &#123; // 表明上一次游戏的最优解有Alice死,Bob活,状态转移,当前游戏的Alice活,Bod死 living[i] = true; break; &#125; &#125; &#125; printf("%s\n", living[t] ? "Alice" : "Bob" ); return 0;&#125;]]></content>
+      <categories>
+        <category>题解</category>
+        <category>动态规划</category>
+      </categories>
+      <tags>
+        <tag>dp</tag>
+        <tag>记忆化搜索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nowcoder190 G-CSL分苹果（01背包）]]></title>
+    <url>%2F2018%2F09%2F17%2Fnowcoder190%20G-CSL%E5%88%86%E8%8B%B9%E6%9E%9C%2F</url>
+    <content type="text"><![CDATA[描述传送门：CSL分苹果 CSL手上有n个苹果，第i个苹果的质量是wi，现在他想把这些苹果分给他的好朋友wavator和tokitsukaze。但是CSL为了不让他们打架，根据质量决定尽量地均分成两堆分给他们。现在CSL想知道到底给每个人分多少质量的苹果。 注意：苹果不能劈开来，并且如果不能正好均分，tokitsukaze小姐姐会拿到重的那一堆。 输入描述第一行输入一个整数n(2 ≤ n ≤ 100)，第二行n个整数，表示每个苹果的质量wi(1 ≤ wi≤ 100)。 输出描述输出两个整数，分别表示wavator和tokitsukaze得到的苹果的质量。 示例输入1232 2 2 输出12 4 题解题目大意又是友好的中文题面 思路一道比较经典的01背包问题。因为,它要两个人的质量差尽量小,同时苹果不能分割,所以把总质量的一半作为01背包的最大容量,然后尽可能的取最大质量。把总质量除以二作为最大容量,每一个苹果的花费和收益都是它的重量,然后就是一个裸的01背包。 代码123456789101112131415161718192021222324#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 105; int main()&#123; int n; int a[maxn]; int dp[maxn * maxn]; cin &gt;&gt; n; int sum = 0; for(int i = 1; i &lt;= n; i++) &#123; cin &gt;&gt; a[i]; sum += a[i]; &#125; memset(dp,0,sizeof(dp)); for(int i = 1; i &lt;= n; i++)&#123; for(int j = sum / 2; j &gt;= a[i]; j--)&#123; dp[j] = max(dp[j], dp[j - a[i]] + a[i]); &#125; &#125; cout &lt;&lt; dp[sum / 2] &lt;&lt; " " &lt;&lt; sum - dp[sum / 2] &lt;&lt; endl; return 0;&#125;]]></content>
+      <categories>
+        <category>题解</category>
+        <category>动态规划</category>
+      </categories>
+      <tags>
+        <tag>dp</tag>
+        <tag>01背包</tag>
+        <tag>背包问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nowcoder190 C 谁是神射手（概率计算）]]></title>
+    <url>%2F2018%2F09%2F17%2Fnowcoder190%20C-%E8%B0%81%E6%98%AF%E7%A5%9E%E5%B0%84%E6%89%8B%2F</url>
+    <content type="text"><![CDATA[描述传送门：谁是神射手 有一天，MWH突然来了兴致，想和CSL比比谁枪法好。于是他们找来了一个瓶子，比比看谁先打中这个瓶子。 给定MWH的命中率和CSL的命中率。 两人轮流射击，MWH先手，问谁获胜的概率大？ 输入描述输入两个整数a和b，表示MWH和CSL的命中率。 输出描述若MWH获胜的概率大，则输出”MWH”。 若CSL获胜的概率大，则输出”CSL”，否则输出”equal”。 示例输入12100 1000 100 输出12MWHCSL 题解题目大意中文题面 思路先手获胜的概率是：先手和后手均失败了n 次后先手成功。即 $ a\sum ^{\infty }_{i=0}\left( 1-a\right) ^{i}\left( 1-b\right) ^{i}=\dfrac {a}{1-\left( 1-a\right) \left( 1-b\right) } $ 同理，后手获胜的概率为 $ a\sum ^{\infty }_{i=0}\left( 1-a\right) ^{i+1}\left( 1-b\right) ^{i}=\dfrac {b\left( 1-a\right) }{1-\left( 1-a\right) \left( 1-b\right) } $ 代码1234567891011121314151617#include&lt;bits/stdc++.h&gt;using namespace std; int main()&#123; double a, b; cin &gt;&gt; a &gt;&gt; b; if(a &gt; (100.0 - a) / 100.0 * b)&#123; cout &lt;&lt; "MWH" &lt;&lt; endl; &#125; else if(a &lt; (100.0 - a) / 100.0 * b)&#123; cout &lt;&lt; "CSL" &lt;&lt; endl; &#125; else&#123; cout &lt;&lt; "equal" &lt;&lt; endl; &#125; return 0;&#125;]]></content>
+      <categories>
+        <category>题解</category>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>概率</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[codeforces-1013c Photo of The Sky(集合 好题)]]></title>
     <url>%2F2018%2F09%2F17%2Fcf-1013c%20Photo%20of%20The%20Sky%2F</url>
     <content type="text"><![CDATA[描述传送门：Photo of The Sky Pavel made a photo of his favourite stars in the sky. His camera takes a photo of all points of the sky that belong to some rectangle with sides parallel to the coordinate axes. Strictly speaking, it makes a photo of all points with coordinates (x,y), such that x1≤x≤x2 and y1≤y≤y2, where (x1,y1) and (x2,y2) are coordinates of the left bottom and the right top corners of the rectangle being photographed. The area of this rectangle can be zero. After taking the photo, Pavel wrote down coordinates of n of his favourite stars which appeared in the photo. These points are not necessarily distinct, there can be multiple stars in the same point of the sky. Pavel has lost his camera recently and wants to buy a similar one. Specifically, he wants to know the dimensions of the photo he took earlier. Unfortunately, the photo is also lost. His notes are also of not much help; numbers are written in random order all over his notepad, so it’s impossible to tell which numbers specify coordinates of which points. Pavel asked you to help him to determine what are the possible dimensions of the photo according to his notes. As there are multiple possible answers, find the dimensions with the minimal possible area of the rectangle. 输入描述The first line of the input contains an only integer n (1≤n≤100000), the number of points in Pavel’s records. The second line contains 2⋅n integers a1, a2, …, a2⋅n (1≤ai≤109), coordinates, written by Pavel in some order. 输出描述Print the only integer, the minimal area of the rectangle which could have contained all points from Pavel’s records. 示例输入123444 1 3 2 3 2 1 335 8 5 5 7 5 输出1210 题解题目大意给你2n个数，任意组合得到n个坐标点，求最小矩形面积能够框住这n个点。 思路我们先将这2n个数排序得到a1,a2…a2n，然后考虑一下问题的转化：我们应该如何计算矩形的面积？ 因为矩形是要求把这n个点框住的，所以稍微想一下不难得到：S=(max(x)−min(x))∗(max(y)−min(y))于是我们将原问题这样转化： 给你2n个数，把这2n个数放在两个集合当中，每个集合的元素个数为n，设这两个集合分别为X,Y， 求min((Xmax−Xmin)∗(Ymax−Ymin)) 接下来我们来讨论，如何分放集合。 考虑如果最大数a2n与最小数a1如果在同一个集合X，那么现在我们要求min(Ymax−Ymin)。 考虑一下怎样的情况才会有min(Ymax−Ymin)的情况出现。假设Ymin在a中为ai，那么Ymax在a中一定为ai+n−1，为什么呢？ 如果Ymax在ai+1−&gt;ai+n−2之间，那么Y集合里面的元素个数就没有要求的n个了，不满足。 如果Ymax在ai+n−&gt;a2n−1之间，那么显然可以在满足元素个数为n的情况下使Ymax最小。 所以在最大数a2n与最小数a1如果在同一个集合X时，答案的值为： Ans=min(a[2n]−a[1])∗(a[i+n−1]−a[i])2≤i≤n 那么还有一种情况就是最大数a2n与最小数a1不在同一个集合当中，与上面类似的讨论不难得到最后的结果唯一： Ans=(a[2n]−a[n+1])∗(a[n]−a[1]) 所以我们最后的结果在上面两者之间取最小即可。 简单方法就排序后,选其中连续的n个数作为x,剩下的按序作为y, 然后用xmax-xmin乘ymax-ymin 取最小解即可 代码12345678910111213141516171819202122232425262728293031323334353637383940414243#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;cstdlib&gt;#include &lt;cstring&gt;#include &lt;cstdio&gt;#include &lt;string&gt;#include &lt;vector&gt;#include &lt;bitset&gt;#include &lt;stack&gt;#include &lt;cmath&gt;#include &lt;deque&gt;#include &lt;queue&gt;#include &lt;list&gt;#include &lt;set&gt;#include &lt;map&gt;#define mem(a, b) memset(a, b, sizeof(a))typedef long long ll;const double PI = acos(-1);const int INF = 0x3f3f3f3f;const int MAXN = 2*1e5 +5;using namespace std;int n;ll a[MAXN];int main()&#123; cin &gt;&gt; n; for(int i = 0; i &lt; n+n; i++)&#123; cin &gt;&gt; a[i]; &#125; sort(a, a+n+n); if(n &lt;= 1)&#123; cout &lt;&lt; "0" &lt;&lt; endl; &#125; else&#123; ll ans = a[n-1]-a[0]; ans *= a[n+n-1]-a[n]; ll l = a[n+n-1]-a[0]; for(int i = 1; i &lt;= n; i++)&#123; ans = min(ans, l*(a[i+n-1]-a[i])); &#125; cout &lt;&lt; ans &lt;&lt; endl; &#125;&#125;]]></content>
@@ -38,14 +86,6 @@
         <tag>数学</tag>
         <tag>思维</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[NYIST-软件ACM集训队招新介绍]]></title>
-    <url>%2F2018%2F09%2F13%2F2018ACM%2F</url>
-    <content type="text"><![CDATA[什么是ACM？ACM国际大学生程序设计竞赛（英语：ACM International Collegiate Programming Contest, ICPC）是由美国计算机协会（ACM）主办的，一项旨在展示大学生创新能力、团队精神和在压力下编写程序、分析和解决问题能力的年度竞赛。经过30多年的发展，ACM国际大学生程序设计竞赛已经发展成为最具影响力的大学生计算机竞赛。 除此之外，ACM现已广泛指代大部分大学生算法竞赛。 为什么要加入ACM集训队？ 不管在什么时候，算法都是计算机科学领域最重要的基石之一。ACMer扎实的算法基础和编程能力更受企业青睐。 软件ACM集训队是我校竞争力最强的工作室之一，每年软件ACM集训队都会派出队伍参加ACM亚洲区域赛，国赛，省赛以及各种程序设计竞赛，并多次取得不俗的成绩。 软件ACM集训队提供了一个良好的学习环境，学习，其实最重要的是环境。 与全国各大高校同台竞技，开阔视野，让你见识到这个领域内最牛逼的那一批同龄人是怎样的水准，自己距离他们有多大的差距。 很多往届学长在 BAT 等知名公司就职，会有很多内推机会。 ACM竞赛成绩对考研有很大加成。 公费旅游 集训队的主要学习内容 我们的目标是通过不断的学习编程及算法，来参加各大算法竞赛及各类编程比赛（穷游全国） 附上一个知乎问题，大家可以看看回答: ACM 的正确入门方式是什么？ 我们主要参加以下几类竞赛: ACM-ICPC World Final （雾 ACM-ICPC国际大学生程序设计竞赛亚洲区域赛 ACM-ICPC国际大学生程序设计竞赛各省省赛以及邀请赛 CCPC中国大学生程序设计竞赛 &quot;蓝桥杯&quot;竞赛 CCCC“中国高校计算机大赛-团体程序设计天梯赛” 以及其他类型的编程竞赛 ACM竞赛的简要规则虽然不同比赛规则大相径庭,但最为广泛通用是以ACM-ICPC竞赛为基础的规则。 ACM-ICPC以团队的形式代表各学校参赛，每队由3名队员组成。比赛期间，每队使用1台计算机需要在5个小时内使用C、C++或Java中的一种编写程序解决8到13个问题。程序完成之后提交裁判运行，运行的结果会判定为”AC(正确)/WA（错误）/TLE（超时）/MLE（超出内存限制）/RE（运行错误）/PE（格式错误）”中的一种并及时通知参赛队。每队在正确完成一题后，组织者将在其位置上升起一只代表该题颜色的气球。最后的获胜者为正确解答题目最多且总用时最少的队伍。每道试题用时将从竞赛开始到试题解答被判定为正确为止，其间每一次提交运行结果被判错误的话将被加罚20分钟时间，未正确解答的试题不记时。 与其它计算机程序竞赛（例如国际信息学奥林匹克，IOI）相比，ACM-ICPC赛制的特点在于其为3人团队作战且题量大，每队需要5小时内完成11道题目，甚至更多。除此之外，一支队伍有3名队员却只有1台计算机，使得时间显得更为紧张。因此除了扎实的编程能力，良好的团队协作和心理素质同样是获胜的关键。 ACM集训队的选拔制度我们会在军训结束后进行简单的C语言培训，国庆期间也会组织有关C语言和简单算法的集训，所有人都可以报名参加。不要担心零基础的问题，我们保证讲到你们听懂为止。我们会在集训后举办一系列的招选拔赛和月赛，根据名次来决定具体的人选，具体请加入2018软件ACM迎新群:839634547 其他特别感谢计科ACM工作室，尤其要感谢hpc大佬 我们采用在线评测系统(online judge)进行训练 本校oj地址: www.nswoj.com (软院搭建 仅内网登录) fzhai.xin (软院搭建) nyoj.top (计科搭建) acm.nyist.edu.cn (老OJ) 不论是学习，生活还是什么方面的问题都会有学长学姐耐心解答。 如果高中有信息学竞赛（NOIP）的经历，可以直接联系我们 最终解释权归南阳理工学院软件学院ACM集训队所有]]></content>
-      <categories>
-        <category>Diary</category>
-      </categories>
   </entry>
   <entry>
     <title><![CDATA[POJ-3009 Curling 2.0（DFS）]]></title>
@@ -122,7 +162,7 @@
   </entry>
   <entry>
     <title><![CDATA[nowcoder163 A-Fruit Ninja（计算几何+随机算法）]]></title>
-    <url>%2F2018%2F08%2F07%2Fnowcoder163-A-Fruit-Ninja%2F</url>
+    <url>%2F2018%2F08%2F07%2Fnowcoder163%20A-Fruit-Ninja%2F</url>
     <content type="text"><![CDATA[描述传送门：A-Fruit Ninja Fruit Ninja is a juicy action game enjoyed by millions of players around the world, with squishy,splat and satisfying fruit carnage! Become the ultimate bringer of sweet, tasty destruction with every slash.Fruit Ninja is a very popular game on cell phones where people can enjoy cutting the fruit by touching the screen.In this problem, the screen is rectangular, and all the fruits can be considered as a point. A touch is a straight line cuttingthought the whole screen, all the fruits in the line will be cut.A touch is EXCELLENT if $ \dfrac {M}{N} $ ≥ x, (N is total number of fruits in the screen, M is the number of fruits that cut by the touch, x is a real number.)Now you are given N fruits position in the screen, you want to know if exist a EXCELLENT touch. 输入描述The first line of the input is T(1≤ T ≤ 100), which stands for the number of test cases you need to solve.The first line of each case contains an integer N (1 ≤ N ≤ 104) and a real number x (0 &lt; x &lt; 1), as mentioned above.The real number will have only 1 digit after the decimal point.The next N lines, each lines contains two integers xi and yi (-109 ≤ xi,yi ≤ 109), denotes the coordinates of a fruit. 输出描述For each test case, output “Yes” if there are at least one EXCELLENT touch. Otherwise, output “No”. 示例输入1234567891011121325 0.6-1 -120 11 205 59 95 0.5-1 -120 11 202 59 9 输出12YesNo 题解题目大意给你n个点，再给你一个p（数据保证0 &lt; p &lt; 1，且p只有1位小数），问是否满足图中有n*p个点在一条直线上 思路随机两个点，然后再看其它所有点 是否在这条直线上即可，随机1000+AC没问题 代码1234567891011121314151617181920212223242526272829303132333435363738#include&lt;bits/stdc++.h&gt;using namespace std;typedef struct&#123; int x; int y;&#125;Point;Point s[20005];int Xc(int x1, int y1, int x2, int y2)&#123; return x1*y2-x2*y1;&#125;int main()&#123; double x; int n, T, i, cnt, a, b, ans; scanf("%d", &amp;T); while(T--)&#123; scanf("%d%lf", &amp;n, &amp;x); for(i=1;i&lt;=n;i++) scanf("%d%d", &amp;s[i].x, &amp;s[i].y); cnt = 1111; while(cnt--)&#123; ans = 0; a = rand()%n, b = rand()%n; if(a==b) continue; for(i=1;i&lt;=n;i++)&#123; if(Xc(s[i].x-s[a].x, s[i].y-s[a].y, s[b].x-s[a].x, s[b].y-s[a].y)==0) ans++; &#125; if(10*ans &gt;= 10*x*n)&#123; printf("Yes\n"); break; &#125; &#125; if(cnt==-1) printf("No\n"); &#125;&#125;]]></content>
       <categories>
         <category>比赛</category>
